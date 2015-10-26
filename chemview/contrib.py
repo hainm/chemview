@@ -28,9 +28,11 @@ def topology_pytraj(traj):
     '''
     import pytraj as pt
     # TODO: make pytraj's API similiar to mdtraj so we don't need to have two methods?
+    # >>> atom.element
+    # ('HYDROGEN', 'H', 1.00794)
 
     top = {}
-    top['atom_types'] = [a.element.symbol for a in traj.topology.atoms]
+    top['atom_types'] = [a.element[1] for a in traj.topology.atoms]
     top['atom_names'] = [a.name for a in traj.topology.atoms]
     top['bonds'] = traj.topology.bond_indices.tolist()
     top['secondary_structure'] = pt.dssp(traj[:1])[1]
