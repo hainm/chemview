@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup, find_packages
+from distutils.core import setup
 
 setup(name='chemview',
       version='0.3',
@@ -8,7 +8,7 @@ setup(name='chemview',
       author='Gabriele Lanaro',
       author_email='gabriele.lanaro@gmail.com',
       url='https://github.com/gabrielelanaro/chemview',
-      packages=find_packages(),
-      package_data = {'': ['*.js', "*.css"]},
+      packages=['chemview', 'chemview.static'],
+      package_data={'chemview.static': ['*.js', "*.css"]},
       include_package_data=True
       )
