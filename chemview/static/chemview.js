@@ -21,7 +21,7 @@ var MolecularViewer = function ($el) {
 		'none': this.renderer,
 	};
 
-	this.camera_z = -150;
+	this.camera_z = +150;
 	this.perspectiveCamera = new THREE.PerspectiveCamera(20, this.container.whratio, 0.1, 800);
 	this.perspectiveCamera.position.set(0, 0, this.camera_z);
 	this.perspectiveCamera.lookAt(new THREE.Vector3(0, 0, 0));
@@ -61,8 +61,8 @@ var MolecularViewer = function ($el) {
     this.controls.zoomInto = function () {};
     this.controls.handleResize = function () {};
 
-	this.controls.rotateSpeed = 0.4;
-	this.controls.zoomSpeed = 1.2;
+	this.controls.rotateSpeed = 1.0;
+	this.controls.zoomSpeed = 1.8;
 	this.controls.panSpeed = 0.8;
 	this.controls.dynamicDampingFactor = 0.2;
 
