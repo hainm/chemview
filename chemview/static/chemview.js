@@ -61,7 +61,7 @@ var MolecularViewer = function ($el) {
     this.controls.zoomInto = function () {};
     this.controls.handleResize = function () {};
 
-	this.controls.rotateSpeed = 2.0;
+	this.controls.rotateSpeed = 4.0;
 	this.controls.zoomSpeed = 1.8;
 	this.controls.panSpeed = 0.8;
 	this.controls.dynamicDampingFactor = 0.2;
