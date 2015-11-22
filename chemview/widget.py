@@ -6,6 +6,10 @@ import numpy as np
 import json
 
 from IPython.display import display, Javascript, Image
+from ipywidgets.widgets import DOMWidget
+from traitlets import (Unicode, Bool, Bytes, CInt, Any,
+                       Dict, Enum, CFloat, List, Tuple, CUnicode,
+                       CBool)
 
 try:
     from IPython.html.widgets import DOMWidget

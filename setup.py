@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='chemview',
-      version='0.3',
+      version='0.4',
       description='Interactive molecular viewer for IPython notebook',
       author='Gabriele Lanaro',
       author_email='gabriele.lanaro@gmail.com',
