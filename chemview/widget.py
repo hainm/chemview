@@ -10,21 +10,6 @@ from ipywidgets.widgets import DOMWidget
 from traitlets import (Unicode, Bool, Bytes, CInt, Any,
                        Dict, Enum, CFloat, List, Tuple, CUnicode,
                        CBool)
-
-try:
-    from IPython.html.widgets import DOMWidget
-except ImportError:
-    from ipywidgets.widgets import DOMWidget
-
-try:
-    from IPython.utils.traitlets import (Unicode, Bool, Bytes, CInt, Any,
-                                         Dict, Enum, CFloat, List, Tuple, CUnicode,
-                                         CBool)
-except ImportError:
-    from traitlets import (Unicode, Bool, Bytes, CInt, Any,
-                           Dict, Enum, CFloat, List, Tuple, CUnicode,
-                           CBool)
-    
 from .utils import encode_numpy
 
 __all__ = ['RepresentationViewer', "TrajectoryControls"]
